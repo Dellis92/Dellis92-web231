@@ -11,7 +11,7 @@
 h1,h2,h3,h4{
     background-color: #3c275a;
     color: white;
-    border: solid 1px color #D6A800;
+    border: solid 1px #D6A800;
 }
 
 a{
@@ -21,9 +21,9 @@ a{
 
 a:hover{
     background-color: #D6A800;
-    font: color #4F3674;
+    color: #4F3674;
 }
 
 a:visited{
-    font: color #3C275A;
+   color: #3C275A;
 }
