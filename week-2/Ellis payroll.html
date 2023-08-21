@@ -2,38 +2,56 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="site.css">
+        <link rel="stylesheet" href="ellispayroll.css">
     </head>
     <body>
         <h1 id=payroll-header>Payroll System</h1>
         
         <h3>Employee Record 1</h3>
         <ul>
-            <li>Jackie</li>
-            <li>Warren</li>
-            <li>321 First Street</li>
-            <li>04/08/2023</li>
-            <li>21.5</li>
+            <li txtfirstName>Jackie</li>
+            <li txtlastName>Warren</li>
+            <li txtaddress>321 First Street</li>
+            <li txthireDate>04/08/2023</li>
+            <li txtpayRate>21.5</li>
         </ul>
 
         <h3>Employee Record 2</h3>
         <ul>
-            <li>Ana</li>
-            <li>Smith</li>
-            <li>5021 Thistle Drive</li>
-            <li>01/03/2023</li>
-            <li>23.7</li>
+            <li txtfirstName>Ana</li>
+            <li txtlastName>Smith</li>
+            <li txtaddress>5021 Thistle Drive</li>
+            <li txthireDate>01/03/2023</li>
+            <li txtpayRate>23.7</li>
         </ul>
 
         <h3>Employee Record 3</h3>
         <ul>
-            <li>Jamar</li>
-            <li>Kennedy</li>
-            <li>478 Uptown Road</li>
-            <li>10/26/2022</li>
-            <li>27.4</li>
+            <li txtfirstName>Jamar</li>
+            <li txtlastName>Kennedy</li>
+            <li txtaddress>478 Uptown Road</li>
+            <li txthireDate>10/26/2022</li>
+            <li txtpayRate>27.99123</li>
         </ul>
 
-        <a>index.html</a>
+        <script>
+            const ul=document.getElementbyId("txtfirstName").innerHTML="";
+            const ul=document.getElementbyId("txtlastName").innerHTML="";
+            const ul=document.getElementbyID("txtaddress").innerHTML="";
+
+            var txthireDate= new Date ('04/08/2023 UTC');
+            date.toString()
+
+            var txthireDate= new Date ('01/03/2023 UTC');
+            date.toString()
+
+            var txthireDate= new Date ('10/26/2022 UTC');
+            date.toString()
+
+            const txtpayRate = 27.99;
+            console.log(txtpayRate.tofixed(1));
+        </script>
+
+        <a href="index.html">return home</a>
     </body>
 </html>
