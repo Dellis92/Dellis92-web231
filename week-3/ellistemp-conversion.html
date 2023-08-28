@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="ellistemp-conversion.css">
+    </head>
+
+    <body>
+        <h1>Welcome to the Temperature Conversion App</h1>
+
+        <div class="box1">
+            <h2>Fahrenheit to Celsius Converter</h2>
+            
+            <form>
+                <label for="txtFahrenheit">Fahrenheit Value</label>
+                <input type="text" id="txtFahrenheit" name="txtFahrenheit" oninput="tempConversion(this.value)" onchange="tempConversion(this.value)">
+                <input type="button" id="btn" value="Convert Temperature" onclick="tempConversion(this.value)" onchange="tempConversion(this.value)">
+            </form>
+        </div>
+        <div class="box2">
+            <p>Conversion Results: <span id=celsiusTemp></span></p>
+        </div>
+
+        <a href="index.html">Return Home</a>
+
+        <script>
+            btn.onclick = tempConversion;
+            function tempConversion(fahrenheit) {
+              fahrenheit = parseFloat(fahrenheit);
+              document.getElementById("celsiusTemp").innerHTML=(fahrenheit-32/1.8).toFixed(2);
+            }
+            </script>
+
+    </body>
