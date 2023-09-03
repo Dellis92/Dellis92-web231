@@ -27,7 +27,7 @@
             btn.onclick = tempConversion;
             function tempConversion(fahrenheit) {
               fahrenheit = parseFloat(fahrenheit);
-              document.getElementById("celsiusTemp").innerHTML=(fahrenheit-32/1.8).toFixed(2);
+              document.getElementById("celsiusTemp").innerHTML=(fahrenheit-32*5/9).toFixed(2);
             }
             </script>
 
