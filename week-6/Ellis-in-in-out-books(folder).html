@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Ellis-in-n-out-books(folder).css">
+    </head>
+    <body>
+        <h1 class="app-header">Welcome to In-N-Out-Books</h1>
+        <div class="box1">
+            <h3>My Favorites</h3>
+            <select class="drop-down-menu" id="favoriteList">
+                <option value="select">--Select--</option>
+                <option value="books">Top 3 Favorite Books</option>
+                <option value="authors">Top 3 Favorite Books</option>
+            </select>
+
+            <button id="btnDisplayListing">Display Listing</button>
+        </div>
+    </body>
+
+    <script>
+        const favBooks = [
+            {ISBN, name:"Mortal Engines", pages:"320" },
+            {ISBN, name:"That Time I got Reincarnated as a Slime", pages:"292, varies by novel" },
+            {ISBN, name:"Captain Cornrith", pages: "422" },
+        ];
+        books.forEach((book) => {
+            let o = document.createElement("option");
+            o.text = book.name;
+            o.value = book.pages;
+            slctBook.appendChild(o);
+        });
+        slctBook.onchange = function() {
+            result.innerText=slctBooks.value+"pages";
+        };
+
+        const favAuthors = [
+            {name:"Egan Laura", genre:"Science Fiction" },
+            {name:"Fuze", genre:"Fantasy" },
+            {name:"Takuma Tomomasa", genre: "Science Fiction" },
+        ];
+        authors.forEach((author) => {
+            let o = document.createElement("option");
+            o.text = author.name;
+            o.value = author.pages;
+            slctBook.appendChild(o);
+        });
+        slctBook.onchange = function() {
+            result.innerText=slctAuthors.value+"authors";
+        };
+
+    </script>
+
+</html>
