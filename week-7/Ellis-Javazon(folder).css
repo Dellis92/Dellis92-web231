@@ -1,0 +1,44 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+h1{
+    color: black;
+}
+
+#app-header{
+    background-color: #453674;
+}
+
+p{
+    font-size: 28px;
+    color: #453674;
+}
+
+a:hover{
+    background-color: #D6A800;
+    color: #4F3674;
+}
+
+a:visited{
+   color: #3C275A;
+}
+
+#btnDisplaySequence{
+    background-color: #453674;
+    font: white;
+    float: bottom;
+}
+
+#box1{
+    text-align: center;
+}

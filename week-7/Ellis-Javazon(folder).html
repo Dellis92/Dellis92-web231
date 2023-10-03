@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Ellis-Javazon(folder).css">
+    </head>
+    <body>
+        <h1 class="app-header">Welcome to the Javazon App</h1>
+        <div class="box1">
+            <h3>Javazon Selection Form</h3>
+            <select class="drop-down-menu" id="favoriteList">
+                <option value="select">--Select--</option>
+                <option value="products">Products</option>
+                <option value="services">Services</option>
+                <option value="employees">Employees</option>
+            </select>
+
+            <button id="btnDisplayListing">Display Listing</button>
+
+            <table id="products">
+                <tr>
+                    <th>Product ID</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total Value</th>
+                </tr>
+
+                <tr>
+                    <th>1111105</th>
+                    <th>George Orwell 1984</th>
+                    <th>28.99</th>
+                    <th>50</th>
+                    <th>1,449.50</th>
+                </tr>
+
+                <tr>
+                    <th>1458695</th>
+                    <th>Animal Farm</th>
+                    <th>25.99</th>
+                    <th>85</th>
+                    <th>2,209.15</th>
+                </tr>
+
+                <tr>
+                    <th>1111478</th>
+                    <th>The Catcher and the Rye</th>
+                    <th>18.99</th>
+                    <th>45</th>
+                    <th>854.55</th>
+                </tr>
+
+                <tr>
+                    <th>1245896</th>
+                    <th>To Kill a Mockingbird</th>
+                    <th>21.99</th>
+                    <th>39</th>
+                    <th>857.61</th>
+                </tr>
+
+                <tr>
+                    <th>1225897</th>
+                    <th>Rolling Thunder Hear My Cry</th>
+                    <th>20.99</th>
+                    <th>47</th>
+                    <th>986.53</th>
+                </tr>
+
+            </table>
+
+            <table id="services">
+                <tr>
+                    <th>Service ID</th>
+                    <th>Description</th>
+                    <th>Hourly Rate</th>
+                    <th>Minimum Billable Hours</th>
+                </tr>
+
+                <tr>
+                    <th>102</th>
+                    <th>Web Design</th>
+                    <th>170.58</th>
+                    <th>20</th>
+                </tr>
+
+                <tr>
+                    <th>103</th>
+                    <th>Database Design</th>
+                    <th>145.69</th>
+                    <th>25</th>
+                </tr>
+
+               <tr>
+                    <th>104</th>
+                    <th>DevOps Consulting</th>
+                    <th>125.96</th>
+                    <th>30</th>
+                </tr>
+            </table>
+            <table id="employees">
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>1001</td>
+                    <td>Lee</td>
+                    <td>Bruce</td>
+                    <td>20.57</td>
+                </tr>
+
+                <tr>
+                    <td>1002</td>
+                    <td>Tomilison</td>
+                    <td>Larry</td>
+                    <td>14.55</td>
+                </tr>
+
+                <tr>
+                    <td>1003</td>
+                    <td>Smith</td>
+                    <td>Jackie</td>
+                    <td>15.66</td>
+                </tr>
+
+                <tr>
+                    <td>1004</td>
+                    <td>Ash</td>
+                    <td>Arthur</td>
+                    <td>14.36</td>
+                </tr>
+
+                <tr>
+                    <td>1005</td>
+                    <td>Rodgers</td>
+                    <td>Tommy</td>
+                    <td>19.85</td>
+                </tr>
+            </table>
+        </div>
+
+        <a id="return-home" href="index.html">return home</a>
+    </body>
+
+    <script>
+        class products{
+            constructor(id, description, price, quantity, totalValue)
+            this.id = id;
+            this.description = description;
+            this.price = price;
+            this.quantity = quantity;
+            this.totalValue = totalValue;
+        }
+
+        class services{
+            constructor(id, description, hourlyRate,minHours)
+            this.id = id;
+            this.description = description;
+            this.hourlyRate = hourlyRate;
+            this.minHours = minimumHours;
+    
+        }
+        class employees{
+
+            constructor(id, firstName, lastName, salary)
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.salary = salary;
+        }
+
+        const products = document.getElementById('products');
+        const services = document.getElementById('services');
+        const employees = document.getElementById('employees');
+    </script>
+</html>
