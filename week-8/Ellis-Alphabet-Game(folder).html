@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Ellis-Alphabet-Game(folder).css">
+
+    </head>
+    <body>
+        <div class="alphabet-box">
+            <h1 class="app-header">Welcome to the Alphabet Game</h1>
+            <form>
+                <label for="txtPostition">Alphabet Letter Position</label>
+                <input type="text" id="txtPosition" name="txtPosition">
+                <input type="button" id="btnFindLetter" value="Find Letter">
+            </form>
+        </div>
+
+        <div class="LetterBox">
+            <h2>Letters in the Alphabet</h2>
+        </div>
+
+        <div class="ResultsBox">
+            <h3>Results</h3>
+        </div>
+
+        <a id="return-home" href="index.html">return home</a>
+    </body>
+
+    <script>
+        
+        var guess;
+        var guess = prompt("What's your Guess?");
+
+        for(i=0; i<26; i++){
+            if (answer == guess){
+                alert("You guessed correctly")
+                break;
+            }else{
+                guess = prompt("please try again")
+            }
+        }
+    </script>
+</html>
